@@ -53,7 +53,8 @@
             flex-direction: column;
             gap: 15px;
             width: 100%;
-            max-width: 500px; /* PCで見ても広がりすぎないように制限 */
+            max-width: 500px;
+            /* PCで見ても広がりすぎないように制限 */
         }
 
         /* カード型のリンクボタン */
@@ -73,7 +74,8 @@
         }
 
         /* マウスを乗せた時・タップした時のアニメーション */
-        .card-link:hover, .card-link:active {
+        .card-link:hover,
+        .card-link:active {
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-color: var(--primary-color);
@@ -88,8 +90,9 @@
             margin-top: 6px;
             font-weight: normal;
         }
-        
-        .card-link:hover span, .card-link:active span {
+
+        .card-link:hover span,
+        .card-link:active span {
             color: var(--primary-color);
             opacity: 0.8;
         }
@@ -98,23 +101,20 @@
 
 <body>
     <h1>Nyaftama's GitHub Page</h1>
-    
+
     <div class="link-container">
-        <a href="https://nyaftama.github.io/uma7th-item-search/" class="card-link">
-            ウマ娘 グッズ被弾チェッカー 7th in TOKYO edition
-            <span>7th EVENTのグッズ計算・管理ツール</span>
-        </a>
-        
         <a href="https://nyaftama.github.io/uma-ouen-baken/" class="card-link">
             ウマ娘 推しバ券メーカー ALLSTAR edition
             <span>全ウマ娘対応の非公式応援ツール</span>
         </a>
-
         <a href="https://nyaftama.github.io/uma7th-ouen-baken/" class="card-link">
             ウマ娘 推しバ券メーカー 7th in TOKYO edition
             <span>7th EVENT仕様の非公式応援ツール</span>
         </a>
-
+        <a href="https://nyaftama.github.io/uma7th-item-search/" class="card-link">
+            ウマ娘 グッズ被弾チェッカー 7th in TOKYO edition
+            <span>7th EVENTのグッズ計算・管理ツール</span>
+        </a>
         <a href="https://x.com/nyaftama" class="card-link">
             X（旧Twitter）
             <span>@nyaftama</span>
