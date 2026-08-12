@@ -2,6 +2,7 @@
 <html lang="ja">
 
 <head>
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2RNJ72H75W"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -22,120 +23,65 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
-
-    <style>
-        :root {
-            --primary-color: #2e7d32;
-            --bg-color: #f4f6f8;
-            --card-bg: #ffffff;
-            --text-color: #333333;
-            --border-color: #e0e0e0;
-        }
-
-        body {
-            font-family: 'Noto Sans JP', 'Helvetica Neue', Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            margin: 0;
-            padding: 40px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-feature-settings: "palt";
-        }
-
-        h1 {
-            color: var(--primary-color);
-            font-size: 1.5rem;
-            margin-top: 0;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-
-        /* ボタンを縦に並べるコンテナ */
-        .link-container {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            width: 100%;
-            max-width: 500px;
-            /* PCで見ても広がりすぎないように制限 */
-        }
-
-        /* カード型のリンクボタン */
-        .card-link {
-            display: block;
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 20px;
-            text-decoration: none;
-            color: var(--text-color);
-            font-weight: bold;
-            font-size: 1.05rem;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-            transition: all 0.2s ease;
-        }
-
-        /* マウスを乗せた時・タップした時のアニメーション */
-        .card-link:hover,
-        .card-link:active {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-color: var(--primary-color);
-            color: var(--primary-color);
-        }
-
-        /* ツール名の下の補足テキスト */
-        .card-link span {
-            display: block;
-            font-size: 0.8rem;
-            color: #666;
-            margin-top: 6px;
-            font-weight: normal;
-        }
-
-        .card-link:hover span,
-        .card-link:active span {
-            color: var(--primary-color);
-            opacity: 0.8;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css?v=1.1">
 </head>
 
 <body>
-    <h1>Nyaftama's GitHub Page</h1>
+    <div class="container">
+        <h1 class="main-title">Nyaftama's GitHub Page</h1>
 
-    <div class="link-container">
-        <a href="https://nyaftama.github.io/uma-ouen-baken/" class="card-link">
-            ウマ娘 推しバ券メーカー ALLSTAR edition
-            <span>全ウマ娘対応の非公式応援ツール</span>
-        </a>
-        <a href="https://nyaftama.github.io/uma7th-ouen-baken/" class="card-link">
-            ウマ娘 推しバ券メーカー 7th in TOKYO edition
-            <span>7th EVENT仕様の非公式応援ツール</span>
-        </a>
-        <a href="https://nyaftama.github.io/uma7th-item-search/" class="card-link">
-            ウマ娘 グッズ被弾チェッカー 7th in TOKYO edition
-            <span>7th EVENTのグッズ計算・管理ツール</span>
-        </a>
-        <a href="https://nyaftama.github.io/uma-hyper-recovery/" class="card-link">
-            ウマ娘 なんでも超回復メーカー
-            <span>温泉郷シナリオの「超回復」演出再現ツール</span>
-        </a>
-        <a href="https://nyaftama.github.io/uma-new-era-title/" class="card-link">
-            ウマ娘 劇場版レース名メーカー
-            <span>劇場版「新時代の扉」のレース名カット再現ツール</span>
-        </a>
-        <a href="https://nyaftama.github.io/corner-to-ratio/" class="card-link">
-            corner-to-ratio
-            <span>写真の台形歪み・アスペクト比自動補正Webツール</span>
-        </a>
-        <a href="https://x.com/nyaftama" class="card-link">
-            X（旧Twitter）
-            <span>@nyaftama</span>
-        </a>
+        <!-- Section 1: ウマ娘 ツール (#2e7d32) -->
+        <div class="section-block">
+            <h2 class="section-title uma">ウマ娘 ツール</h2>
+            <div class="link-container">
+                <a href="https://nyaftama.github.io/uma-salmon-summoner/" class="card-link uma">
+                    ウマ娘 なんでもサーモンサモナー<span class="badge-new">NEW</span>
+                    <span class="card-desc">任意の画像にシャケ・Thisマグロを召喚できるツール</span>
+                </a>
+                <a href="https://nyaftama.github.io/uma-new-era-title/" class="card-link uma">
+                    ウマ娘 劇場版レース名メーカー
+                    <span class="card-desc">劇場版「新時代の扉」のレース名カット再現ツール</span>
+                </a>
+                <a href="https://nyaftama.github.io/uma-hyper-recovery/" class="card-link uma">
+                    ウマ娘 なんでも超回復メーカー
+                    <span class="card-desc">温泉郷シナリオの「超回復」演出再現ツール</span>
+                </a>
+                <a href="https://nyaftama.github.io/uma-ouen-baken/" class="card-link uma">
+                    ウマ娘 推しバ券メーカー ALLSTAR edition
+                    <span class="card-desc">全ウマ娘対応の非公式応援ツール</span>
+                </a>
+                <a href="https://nyaftama.github.io/uma7th-ouen-baken/" class="card-link uma">
+                    ウマ娘 推しバ券メーカー 7th in TOKYO edition
+                    <span class="card-desc">7th EVENT仕様の非公式応援ツール</span>
+                </a>
+                <a href="https://nyaftama.github.io/uma7th-item-search/" class="card-link uma">
+                    ウマ娘 グッズ被弾チェッカー 7th in TOKYO edition
+                    <span class="card-desc">7th EVENTのグッズ計算・管理ツール</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Section 2: 汎用 ツール (#1976d2) -->
+        <div class="section-block">
+            <h2 class="section-title general">汎用 ツール</h2>
+            <div class="link-container">
+                <a href="https://nyaftama.github.io/corner-to-ratio/" class="card-link general">
+                    corner-to-ratio
+                    <span class="card-desc">写真の台形歪み・アスペクト比自動補正Webツール</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Section 3: SNS -->
+        <div class="section-block">
+            <h2 class="section-title sns">Links</h2>
+            <div class="link-container">
+                <a href="https://x.com/nyaftama" class="card-link sns" target="_blank" rel="noopener noreferrer">
+                    X（旧Twitter）
+                    <span class="card-desc">@nyaftama</span>
+                </a>
+            </div>
+        </div>
     </div>
 </body>
 
